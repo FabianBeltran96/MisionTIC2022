@@ -2,12 +2,17 @@ package ejerciciosclase6;
 
 
 public class Triki {
-
+    
+    public static final String ANSI_RESET = "\u001B[0m";
+    
+    public static final String ANSI_RED = "\u001B[31m";
+    
+    public static final String ANSI_BLUE = "\u001B[34m";
+    
     public char[][] matriz;
 
     public Triki() {
         this.matriz = new char[][]{{'a', 'a', 'a'}, {'a', 'a', 'a'}, {'a', 'a', 'a'}};
-
     }
 
     public void marcarCasilla(char simbolo, int fila, int columna) {
@@ -43,7 +48,12 @@ public class Triki {
     public void imprimir() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.print(matriz[i][j] + " ");
+                if (matriz[i][j] == 'x')
+                    System.out.print( ANSI_RED +matriz[i][j] + " " + ANSI_RESET);
+                else if( matriz[i][j] == 'o')
+                    System.out.print( ANSI_BLUE +matriz[i][j] + " " + ANSI_RESET);
+                else
+                    System.out.print(matriz[i][j] + " ");         
             }
             System.out.println();
         }

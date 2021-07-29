@@ -12,7 +12,9 @@ import java.util.Scanner;
  * @author fabia
  */
 public class EjerciciosClase6 {
-
+    
+    
+    
     public void testContraseñas() {
         Contraseña password = new Contraseña(8);
         System.out.println(password.Contraseña);
@@ -40,13 +42,19 @@ public class EjerciciosClase6 {
 
     public static void juegoTriki() {
         Triki partida = new Triki(); //Creo la partida
-        int[] posiciones = {0, 0}; 
+        int[] posiciones = {0, 0};
+
         Scanner sc = new Scanner(System.in); //Capturo los datos
         partida.imprimir(); //imprimir estado de la partida
+        System.out.println("Inicia el juego!");
+
+        System.out.println("Ingresa la posicion de la siguiente manera:");
+        System.out.println("FILA COLUMNA");
+        System.out.println("EJEMPLO: 0 0");
+
         int turno = 1;
         int jugadas = 0;
         char caracter = 'x';
-        
         while (true) {
             System.out.println("Marca Casilla jugador " + turno + ":");
             //capura de la posicion
@@ -57,18 +65,26 @@ public class EjerciciosClase6 {
             //Verificacion de estado de la casilla, PENDIENTE!
             if (partida.verificarCasilla(posiciones[0], posiciones[1]) != 'a') {
                 System.out.println("Esta casilla no esta disponible!");
+                jugadas--;
+
             } else {
                 partida.marcarCasilla(caracter, posiciones[0], posiciones[1]);
-            }
+                partida.imprimir();
 
-            partida.imprimir();
-            //Cambio de turnos y caracteres
-            if (turno == 1) {
-                turno = 2;
-                caracter = 'o';
-            } else {
-                turno = 1;
-                caracter = 'x';
+                //Cambio de turnos y caracteres
+                if (partida.verificadorGanador() == '5') {
+
+                } else {
+                    System.out.println("El ganador es el jugador " + turno + "!");
+                    break;
+                }
+                if (turno == 1) {
+                    turno = 2;
+                    caracter = 'o';
+                } else {
+                    turno = 1;
+                    caracter = 'x';
+                }
             }
             
             if (jugadas == 8) {
@@ -76,7 +92,7 @@ public class EjerciciosClase6 {
                 break;
             }
             //System.out.println("El ganador es: " + partida.verificadorGanador());
-            jugadas++;           
+            jugadas++;
         }
         //System.out.println(partida.verificarCasilla(0, 0));
     }
