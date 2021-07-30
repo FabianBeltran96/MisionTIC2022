@@ -12,10 +12,8 @@ import java.util.Scanner;
  * @author fabia
  */
 public class EjerciciosClase6 {
-    
-    
-    
-    public void testContraseñas() {
+
+    public static void testContraseñas() {
         Contraseña password = new Contraseña(8);
         System.out.println(password.Contraseña);
         System.out.println(password.esFuerte());
@@ -45,12 +43,13 @@ public class EjerciciosClase6 {
         int[] posiciones = {0, 0};
 
         Scanner sc = new Scanner(System.in); //Capturo los datos
-        partida.imprimir(); //imprimir estado de la partida
         System.out.println("Inicia el juego!");
 
         System.out.println("Ingresa la posicion de la siguiente manera:");
         System.out.println("FILA COLUMNA");
         System.out.println("EJEMPLO: 0 0");
+
+        partida.imprimir(); //imprimir estado de la partida
 
         int turno = 1;
         int jugadas = 0;
@@ -66,7 +65,6 @@ public class EjerciciosClase6 {
             if (partida.verificarCasilla(posiciones[0], posiciones[1]) != 'a') {
                 System.out.println("Esta casilla no esta disponible!");
                 jugadas--;
-
             } else {
                 partida.marcarCasilla(caracter, posiciones[0], posiciones[1]);
                 partida.imprimir();
@@ -86,7 +84,7 @@ public class EjerciciosClase6 {
                     caracter = 'x';
                 }
             }
-            
+
             if (jugadas == 8) {
                 System.out.println("El juego ha sido empatado!");
                 break;
@@ -97,10 +95,19 @@ public class EjerciciosClase6 {
         //System.out.println(partida.verificarCasilla(0, 0));
     }
 
+    public static void testPersona() {
+        Persona Cristian = new Persona("Cristian", 23 , 70 ,178, 'H');
+        Persona Fabian = new Persona("Cristian", 24 , 68 ,171, 'H');
+        System.out.println(Cristian.calcularIMC());
+        System.out.println(Fabian.esMayorDeEdad());      
+    }
+
     public static void main(String[] args) {
         //testPacman();
         //testTriki();
-        juegoTriki();
+        //juegoTriki();
+        //testPersona();
+        //testContraseñas();
     }
 
 }

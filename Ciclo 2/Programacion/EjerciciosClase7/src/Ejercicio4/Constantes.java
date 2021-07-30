@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package duke.choice;
+package Ejercicio4;
 
 /**
  *
- * @author USUARIO
+ * @author fabia
  */
-public class Clothing {
-    String description, size = "M";
-    double price; 
+interface Constantes {
+
+    double PI = 3.14;
+    double e = 2.718;
+
 }

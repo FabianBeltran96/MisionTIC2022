@@ -4,7 +4,7 @@ import java.util.Random;
 
 public final class Contraseña {
 
-    static int  Longitud;
+    static int Longitud;
     static String Contraseña;
 
     public Contraseña(int Longitud) {
@@ -55,7 +55,6 @@ public final class Contraseña {
     }
 
     public static void main(String[] args) {
-        /*
         int contador = 0;
         Contraseña miContraseña = new Contraseña(8);
         boolean bandera = true;
@@ -69,6 +68,5 @@ public final class Contraseña {
             miContraseña.cambiarContraseña(randomPassword());
             System.out.println(contador);
         }
-        */
     }
 }
