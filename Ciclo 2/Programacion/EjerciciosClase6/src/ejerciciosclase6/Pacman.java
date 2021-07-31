@@ -33,4 +33,13 @@ public class Pacman {
         return "Pacman{" + "color=" + color + ", puntuacion=" + puntuacion + ", vidasRestantes=" + vidasRestantes + '}';
     }
 
+    public static void main(String[] args) {
+        Pacman Jugador1 = new Pacman("Amarillo", 0, 3);
+        System.out.println(Jugador1.toString());
+        Jugador1.sumarPuntuacion();
+        System.out.println(Jugador1.toString());
+        Jugador1.puntuacion = 99;
+        Tablero Nivel = new Tablero(Jugador1, 0);
+        Nivel.comprobarNivelActual(Jugador1.puntuacion);
+    }
 }
