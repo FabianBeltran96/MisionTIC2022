@@ -3,18 +3,18 @@
 Esta es mi carpeta de ejercicios de Mision TIC 2022
 
 
-# Ejercicios propuestos por la Universidad Nacional resueltos.
+## Ejercicios propuestos por la Universidad Nacional resueltos.
 
 `links` : <https://github.com/FabianBeltran96/MisionTIC2022/tree/main/Ciclo%202/Programacion>
 
 Todas las carpetas son proyectos organizacionados por sesión de clase.
 
-## Ejercicios Clase 6
+### Ejercicios Clase 6
 A cada ejercicio le corresponde un archivo .JAVA, en el cual en el apartado main se ejecuta una porción de codigo
 que pone a prueba la solucion.
 
-### Ejercicio Triki
+#### Ejercicio Triki
 El main de este ejercicio corre una version del juego triki en consola.
 
-### Ejericico Contraseña
+#### Ejercicio Contraseña
 El main de este ejercicio corre un while loop hasta que genera una clave fuerte con las especificaciones que piden en el ejercicio.
