@@ -18,3 +18,6 @@ El main de este ejercicio corre una version del juego triki en consola.
 
 ### Ejericico Contraseña
 El main de este ejercicio corre un while loop hasta que genera una clave fuerte con las especificaciones que piden en el ejercicio.
+
+## Ejercicios Clase 7
+Falta ejercicio 2 por resolver, y añadir mas clases al ejercicio 1.
