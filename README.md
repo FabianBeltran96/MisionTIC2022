@@ -16,13 +16,11 @@ que pone a prueba la solucion.
 #### Ejercicio Triki
 El main de este ejercicio corre una version del juego triki en consola.
 
-<<<<<<< HEAD
 ### Ejericico Contraseña
+El main de este ejercicio corre un while loop hasta que genera una clave fuerte con las especificaciones que piden en el ejercicio.
+
+#### Ejercicio Contraseña
 El main de este ejercicio corre un while loop hasta que genera una clave fuerte con las especificaciones que piden en el ejercicio.
 
 ## Ejercicios Clase 7
 Falta ejercicio 2 por resolver, y añadir mas clases al ejercicio 1.
-=======
-#### Ejercicio Contraseña
-El main de este ejercicio corre un while loop hasta que genera una clave fuerte con las especificaciones que piden en el ejercicio.
->>>>>>> 7e46fb0c29d11959f82bdfabcd9787d0de8fe8e8
