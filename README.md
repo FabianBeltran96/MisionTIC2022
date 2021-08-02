@@ -23,3 +23,11 @@ El main de este ejercicio corre un while loop hasta que genera una clave fuerte 
 Falta ejercicio 2 por resolver, y añadir mas clases al ejercicio 1.
 
 ### Ejercicios Clase 8 (EJERCICIOS PENDIENTES)
+
+
+
+<div align="center">
+
+[![Stars](https://img.shields.io/github/stars/FabianBeltran96/MisionTIC2022)](https://github.com/FabianBeltran96/MisionTIC2022)
+
+</div>
