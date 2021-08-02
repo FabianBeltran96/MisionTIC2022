@@ -16,8 +16,7 @@ public abstract class Figura {
     public Figura(String color) {
         this.color = color;
     }
-    
-
+   
     public double Perimetro() {
         return 0;
     }

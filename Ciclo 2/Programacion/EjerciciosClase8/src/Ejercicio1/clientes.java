@@ -9,14 +9,6 @@ package Ejercicio1;
  *
  * @author fabia
  */
-public class Persona {
-    public long id;
-    public String genero;
-    public String telefono;
-    public String nacionalidad;
-    public String nombre;
-    
-    public Direccion direccion;
-
+class clientes {
     
 }
