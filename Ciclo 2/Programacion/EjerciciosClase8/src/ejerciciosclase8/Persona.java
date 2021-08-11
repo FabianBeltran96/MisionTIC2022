@@ -9,13 +9,14 @@ package ejerciciosclase8;
  *
  * @author fabianebg
  */
-public class EjerciciosClase8 {
+public class Persona {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    public long id;
+    public String genero;
+    public String telefono;
+    public String nacionalidad;
+    public String nombre;
+
+    public Direccion direccion;
+
 }

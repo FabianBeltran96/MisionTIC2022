@@ -10,6 +10,7 @@ package Ejercicio2;
  * @author fabia
  */
 public class materialBiblioteca {
+
     private String titulo;
     private String temas;
     private String tipo;
@@ -146,9 +147,11 @@ public class materialBiblioteca {
 
     @Override
     public String toString() {
-        return  "tipo=" + tipo + "titulo=" + titulo + ", fecha=" + fecha + '}';
+        return "tipo=" + tipo + "titulo=" + titulo + ", fecha=" + fecha + '}';
     }
-    
-    
-    
+
+    public static void main(String[] args) {
+        System.out.println("test");
+    }
+
 }
