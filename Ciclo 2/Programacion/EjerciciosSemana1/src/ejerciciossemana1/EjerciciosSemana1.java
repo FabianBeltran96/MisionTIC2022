@@ -146,7 +146,7 @@ public class EjerciciosSemana1 {
         //cantidadDeCarne();
         //System.out.println(vueltosTienda(1, 2, 3, 50_000));
         //System.out.println(isVocal(101));
-        //System.out.println(parAscii('f'));
+        System.out.println(parAscii('f'));
         //cuadrados();
         //imparpar();
         //numerosCuadrados();
