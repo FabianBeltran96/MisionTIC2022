@@ -52,7 +52,6 @@ SIMPLE_JWT = {
     'ALGORITHM': 'HS256',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
-
 }
 
 MIDDLEWARE = [
